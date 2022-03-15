@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hal_satu_nav_top"
+    app:startDestination="@id/fragmentA">
+
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="com.rinto.pertemuan6_71180259.FragmentA"
+        android:label="fragment_a"
+        tools:layout="@layout/fragment_a" >
+        <action
+            android:id="@+id/action_fragmentA_to_halamanDuaActivity"
+            app:destination="@id/halamanDuaActivity"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/fragmentA"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <activity
+        android:id="@+id/halamanDuaActivity"
+        android:name="com.rinto.pertemuan6_71180259.HalamanDuaActivity"
+        android:label="activity_halaman_dua"
+        tools:layout="@layout/activity_halaman_dua" />
+</navigation>

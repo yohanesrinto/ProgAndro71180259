@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hal_dua_nav_bottom"
+    app:startDestination="@id/fragmentC">
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="com.rinto.pertemuan6_71180259.FragmentC"
+        android:label="fragment_c"
+        tools:layout="@layout/fragment_c" >
+        <action
+            android:id="@+id/action_fragmentC_to_halamanSatuActivity"
+            app:destination="@id/halamanSatuActivity"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/fragmentC"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <activity
+        android:id="@+id/halamanSatuActivity"
+        android:name="com.rinto.pertemuan6_71180259.HalamanSatuActivity"
+        android:label="activity_halaman_satu"
+        tools:layout="@layout/activity_halaman_satu" />
+</navigation>

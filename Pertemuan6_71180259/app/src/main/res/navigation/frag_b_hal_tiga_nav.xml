@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hal_satu_nav_bottom"
+    app:startDestination="@id/fragmentB">
+
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="com.rinto.pertemuan6_71180259.FragmentB"
+        android:label="fragment_b"
+        tools:layout="@layout/fragment_b" >
+        <action
+            android:id="@+id/action_fragmentB_to_halamanTigaActivity"
+            app:destination="@id/halamanTigaActivity"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/fragmentB"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <activity
+        android:id="@+id/halamanTigaActivity"
+        android:name="com.rinto.pertemuan6_71180259.HalamanTigaActivity"
+        android:label="activity_halaman_tiga"
+        tools:layout="@layout/activity_halaman_tiga" />
+</navigation>
